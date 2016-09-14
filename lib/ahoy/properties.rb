@@ -25,6 +25,7 @@ module Ahoy
             end
           end
         when /postgres/
+        when /postgis/
           if column_type == :jsonb || column_type == :json
             properties.each do |k, v|
               relation =
